@@ -25,9 +25,31 @@ profile.cov
 go.work
 go.work.sum
 
-# env file
-.env
+# Go build output
+backend/bin/
 
-# Editor/IDE
-# .idea/
-# .vscode/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.env
+secrets.*
+*.pem
+*.key
+
+# Android / Kotlin (watch app)
+watch/build/
+watch/.gradle/
+watch/local.properties
+.gradle/
+build/
+local.properties
+*.iml
+
+# Editor / IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
